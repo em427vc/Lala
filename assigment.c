@@ -1,28 +1,13 @@
-#include <iostream>
-#include <cstring>
+
 
 #include <math.h>
-
+#include <string.h>
 #include <stdbool.h>
-
-  
+#include <stdlib.h>
+#include <stdio.h>
 
 char *encrypt_this(const char *str)
 {
-  //char *token;
-char *omg=(char*)malloc(strlen(str));
-char *token=(char*)malloc(2);
-  strcpy(omg,str);
-   int flag=0;
-    token = strtok(omg, " ");
-  while(token!=NULL){
- printf( " %s\n", token );
-    
-      token = strtok(NULL, " ");
-      flag++;
-  }
- //char **arr=(char*)*malloc(flag*10);
-
 char *final=(char*)malloc(strlen(str));
   char *temp=(char*)malloc(strlen(str));
   char second,last;
@@ -58,24 +43,8 @@ char *final=(char*)malloc(strlen(str));
    
    printf("%s\n",final);
 
- 
-free(temp);
+
 
     return final; // your implementation here ...
   }
-}
-
-
-int main(){
-
-encrypt_this("Abcd 65dcb");
-
-//printf("%d",z);
-
-
-//88std::cout<<"a"<<std::endl;
-//print();
-
-std::cin.get();
-
 }
